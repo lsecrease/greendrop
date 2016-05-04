@@ -2,34 +2,38 @@
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-         
-        </div>
-    <div class="mdl-layout__header-row">
+      
+    <div class="mdl-layout__header-row" style="height: 100px; background-color: white;">
       <!-- Title -->
       <%= image_tag("greendrop_logo.png", :alt => "") %>
-      <span class="mdl-layout-title">Test</span>
+      <span class="mdl-layout-title"></span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <!-- Expandable Textfield -->
+        <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+          <i class="material-icons" style="color: #767777 !important;">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+        <input class="mdl-textfield__input" type="text" id="sample6">
+        <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+    </div>
+
+  </div>
+</form>
+    <a class="mdl-navigation__link" href="" style="color: #424242;">Login</a>
+        <a class="mdl-navigation__link" href="" style="color: #424242;">Link</a>
       </nav>
     </div>
+    
+    <!--Banner Logic-->
+  <%= image_tag("Banner.jpg", :alt => "") %>
+
+
+
+    
   </header>
-  <div class="mdl-layout__drawer">
-    <!--<span class="mdl-layout-title">Title</span>-->
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
-  </main>
 </div>
