@@ -1,0 +1,20 @@
+{
+  "name": "workspace",
+  "homepage": "https://github.com/lsecrease/greendrop",
+  "authors": [
+    "Lawrence O. <lawrence@studioimagine.me>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.2.1"
+  }
+}
